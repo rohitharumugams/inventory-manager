@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Inventory Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Inventory Management System is a web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to add, view, and analyze inventory items efficiently. The application features an intuitive interface built with Bootstrap for a responsive and visually appealing design. Users can manage inventory items by specifying details such as name, quantity, price, and category. The system also provides analytical insights through graphical representations of inventory distribution.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new inventory items with details such as name, quantity, price, and category.
+- View all inventory items in a tabular format.
+- Analyze inventory distribution with graphical representations.
+- Authentication and authorization using JWT.
+- Responsive design using Bootstrap.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js, Bootstrap
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT
+- **Developer Tools:** VS Code, GitHub, Postman
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/rohitharumugams/inventory-management-system.git
+   cd inventory-management-system
+   ```
 
-### `npm run build`
+2. Install dependencies for both the client and server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd client
+   npm install
+   cd ../server
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a `.env` file in the `server` directory and add the following:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   ```
 
-### `npm run eject`
+4. Start the backend server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd server
+   node server.js
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Start the frontend server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd client
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Open your browser and navigate to `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Add Items**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Navigate to the "Add" page.
+   - Fill in the item details and click "Add to Inventory".
+   - A success message will be displayed upon successful addition.
 
-### Code Splitting
+2. **View Items**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Navigate to the "View" page.
+   - View all inventory items in a tabular format.
+   - Delete items if necessary.
 
-### Analyzing the Bundle Size
+3. **Analyze Inventory**:
+   - Navigate to the "Analyze" page.
+   - View graphical representations of inventory distribution by quantity and cost.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
